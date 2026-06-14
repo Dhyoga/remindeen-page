@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChromeIcon } from '@/components/icons/BrowserIcons';
+import Image from 'next/image';
 
 const NAV_LINKS = [
   { href: '#fitur', label: 'Fitur' },
@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className='sticky top-0 z-20 border-b border-stone-200/70 bg-stone-50/80 backdrop-blur-md'>
       <div className='mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8'>
         <a href='#' className='flex items-center gap-2'>
-          <img src='logo.png' alt='Logo' className='h-8 w-8 rounded-full object-cover' />
+          <Image src='/logo.png' alt='Logo' className='rounded-full object-cover' width={32} height={32} />
           <span className='text-lg font-semibold tracking-tight text-stone-900'>
             Remindeen
           </span>

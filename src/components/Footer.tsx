@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const FOOTER_LINKS = [
   { href: '#fitur', label: 'Fitur' },
   { href: '#tema', label: 'Tema' },
@@ -11,7 +13,7 @@ export default function Footer() {
         <div className='flex flex-col gap-10 md:flex-row md:items-start md:justify-between'>
           <div className='max-w-sm'>
             <a href='#' className='flex items-center gap-2'>
-              <img src='logo.png' alt='Logo' className='h-8 w-8 rounded-full object-cover' />
+              <Image src='/logo.png' alt='Logo' className='rounded-full object-cover' width={32} height={32} />
               <span className='text-lg font-semibold tracking-tight text-stone-900'>
                 Remindeen
               </span>
