@@ -10,8 +10,6 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <header className='sticky top-0 z-20 border-b border-stone-200/70 bg-stone-50/80 backdrop-blur-md'>
       <div className='mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8'>
